@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Liberary -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Responsive Task Management Dashboard</title>
+  </head>
+  <body>
+    <nav class="left">
+      <ul>
+        <li><img src="svg/inbox.svg" alt="" /> inbox</li>
+        <li><img src="svg/star.svg" alt="" /> today</li>
+        <li><img src="svg/calender.svg" alt="" /> upcoming</li>
+        <li><img src="svg/hash.svg" alt="" /> important</li>
+        <li><img src="svg/users.svg" alt="" /> meetings</li>
+        <li><img src="svg/trash.svg" alt="" /> trash</li>
+      </ul>
+      <ul>
+        <li><img src="svg/users.svg" alt="" /> family</li>
+        <li><img src="svg/sun.svg" alt="" /> vacation</li>
+        <li><img src="svg/trending.svg" alt="" /> festival</li>
+        <li><img src="svg/zap.svg" alt="" />concerts</li>
+      </ul>
+    </nav>
+    <div class="center">
+      <h1>today tasks</h1>
+      <ul class="links">
+        <li><a href="#">all</a></li>
+        <li><a href="#" class="active">important</a></li>
+        <li><a href="#">notes</a></li>
+        <li><a href="#">links</a></li>
+      </ul>
+      <div class="tasks-with-scroll">
+        <ul class="today-list">
+          <!-- the for attr in the label refers to the input you want,
+            and if you click on the label the input will be checked -->
+          <li>
+            <input type="checkbox" name="" id="task-one" />
+            <label for="task-one">Dashboard design implementation</label>
+            <p class="approved">approved</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="task-two" />
+            <label for="task-two">create a userflow</label>
+            <p class="in-progress">in progress</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="task-three" />
+            <label for="task-three">application implementation</label>
+            <p class="in-review">in review</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="task-four" />
+            <label for="task-four">create a Dashboard design</label>
+            <p class="in-progress">in progress</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="task-five" />
+            <label for="task-five">create a web application design</label>
+            <p class="approved">approved</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="task-six" />
+            <label for="task-six">interactive design</label>
+            <p class="in-review">in review</p>
+          </li>
+        </ul>
+        <h1 class="upcoming-header">upcoming tasks</h1>
+        <ul class="upcoming-list">
+          <li>
+            <input type="checkbox" name="" id="upcoming-one" />
+            <label for="upcoming-one">application implementation</label>
+            <p class="waiting">waiting</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="upcoming-two" />
+            <label for="upcoming-two">create a Dashboard design</label>
+            <p class="waiting">waiting</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="upcoming-three" />
+            <label for="upcoming-three">create a web application design</label>
+            <p class="waiting">waiting</p>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="upcoming-four" />
+            <label for="upcoming-four">interactive design</label>
+            <p class="waiting">waiting</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="user">
+        <img src="svg/users.svg" alt="" />
+        <p>6</p>
+      </div>
+      <h2 class="schedule-header">schedule</h2>
+      <div class="schedule-with-scroll">
+        <div>
+          <p>08:00-09:00 AM</p>
+          <h4>product review</h4>
+          <div class="involved-people">
+            <img src="imgs/img1.jpg" alt="" />
+            <img src="imgs/img2.jpg" alt="" />
+            <img src="imgs/img3.jpg" alt="" />
+            <img src="imgs/img4.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <p>10:00-11:00 AM</p>
+          <h4>design meeting</h4>
+          <div class="involved-people">
+            <img src="imgs/img5.jpg" alt="" />
+            <img src="imgs/img6.jpg" alt="" />
+            <img src="imgs/img7.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <p>01:00-02:00 PM</p>
+          <h4>team meeting</h4>
+          <div class="involved-people">
+            <img src="imgs/img6.jpg" alt="" />
+            <img src="imgs/img2.jpg" alt="" />
+            <img src="imgs/img8.jpg" alt="" />
+            <img src="imgs/img4.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <p>03:00-04:00 PM</p>
+          <h4>release event</h4>
+          <div class="involved-people">
+            <img src="imgs/img9.jpg" alt="" />
+            <img src="imgs/img1.jpg" alt="" />
+            <img src="imgs/img2.jpg" alt="" />
+            <img src="imgs/img7.jpg" alt="" />
+            <img src="imgs/img5.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <p>07:00-08:00 PM</p>
+          <h4>release event</h4>
+          <div class="involved-people">
+            <img src="imgs/img1.jpg" alt="" />
+            <img src="imgs/img9.jpg" alt="" />
+            <img src="imgs/img6.jpg" alt="" />
+            <img src="imgs/img3.jpg" alt="" />
+          </div>
+        </div>
+        <div>
+          <p>09:00-10:00 PM</p>
+          <h4>practice</h4>
+          <div class="involved-people">
+            <img src="imgs/img8.jpg" alt="" />
+            <img src="imgs/img2.jpg" alt="" />
+            <img src="imgs/img9.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
